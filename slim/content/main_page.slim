@@ -1,7 +1,7 @@
-.welcome_screen
+section.welcome_screen.page1
   a.main_button href="" We bring the future
-  a.scroll_button href=""
-.about_screen
+  a.scroll_button data-index="2" href="#2"
+section.about_screen.page2
   .wraper
     .wraper_inside
       .big_logo
@@ -11,9 +11,9 @@
         .content_item Always on the edge we derive our power and inspiration from the future: from the plexus where different science and domains are mixed and influence each other.
         .content_item The future is always born on the edge and beyond.
         .slogan Let us bring it to you.
-  a.scroll_button href=""
+  a.scroll_button data-index="3" href="#3"
 
-.categorys_screen
+section.categorys_screen.page3
   .list_category
     a.item.item_icon_1 href=""
       .icon
@@ -35,7 +35,7 @@
       .text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       
 / .diagram_screen
-.for_bottom_screen
+section.for_bottom_screen.page4
   .diagram_screen
   .bottom_screen
     .wraper
@@ -85,3 +85,10 @@
         a href="" 
           |Design by 
           span.bold KORE labs
+javascript:
+  onePageScroll(".main", {
+     sectionContainer: "section",
+     loop: true,
+     animationTime: 800,
+     responsiveFallback: false
+   });

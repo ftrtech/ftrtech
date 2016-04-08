@@ -2,8 +2,8 @@ doctype html
 html
   head
     == Slim::Template.new('./partial/html_head.slim').render
-  body
+  body.viewing-page-1
     == Slim::Template.new('./partial/header.slim').render                                  
-    .main_view_wraper
+    .main_view_wraper.main
       == Slim::Template.new('./content/main_page.slim').render 
     == Slim::Template.new('./partial/footer.slim').render
