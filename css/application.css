@@ -1,0 +1,201 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, fieldset, form, input, table, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  outline: 0 none;
+  vertical-align: baseline;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+._hidden {
+  display: none !important;
+}
+
+.bold {
+  font-family: "PT Sans";
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:active, a:focus {
+  outline: medium none;
+}
+
+a img {
+  border: 0 none;
+}
+
+body {
+  font-family: "RobotoCondensedRegular";
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+
+.link-grey {
+  color: #dcdccd;
+}
+
+.link-grey:hover {
+  color: #d47a00;
+}
+
+.clearfix:before {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@font-face {
+  font-family: "RobotoCondensedBold";
+  src: url("../fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoCondensedRegular";
+  src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway_Extra_Bold";
+  src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/pts55f_w.eot");
+  src: local("PT Sans"), url("../fonts/PTS55F_W.eot?#iefix") format("embedded-opentype"), url("../fonts/PTS55F_W.woff") format("woff"), url("../fonts/PTS55F_W.ttf") format("truetype"), url("../fonts/PTS55F_W.svg#PTSans-Regular") format("svg");
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/pts75f_w.eot");
+  font-style: normal;
+  font-weight: bold;
+  src: local("PT Sans Bold"), url("../fonts/PTS75F_W.eot?#iefix") format("embedded-opentype"), url("../fonts/PTS75F_W.woff") format("woff"), url("../fonts/PTS75F_W.ttf") format("truetype"), url("../fonts/PTS75F_W.svg#PTSans-Bold") format("svg");
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  src: url("../fonts/PTSerifRegular/PTSerifRegular.eot");
+  font-style: normal;
+  font-weight: normal;
+  src: local("PT Sans Bold"), url("../fonts/PTSerifRegular/PTSerifRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSerifRegular/PTSerifRegular.woff") format("woff"), url("../fonts/PTSerifRegular/PTSerifRegular.ttf") format("truetype"), url("../fonts/PTSerifRegular/PTSerifRegular.svg#PTSans-Bold") format("svg");
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  src: url("../fonts/PTSerifBold/PTSerifBold.eot");
+  font-style: normal;
+  font-weight: bold;
+  src: local("PT Serif"), url("../fonts/PTSerifBold/PTSerifBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSerifBold/PTSerifBold.woff") format("woff"), url("../fonts/PTSerifBold/PTSerifBold.ttf") format("truetype"), url("../fonts/PTSerifBold/PTSerifBold.svg#PTSans-Bold") format("svg");
+}
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon/Flaticon.eot");
+  src: url("../fonts/Flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/Flaticon/Flaticon.woff") format("woff"), url("../fonts/Flaticon/Flaticon.ttf") format("truetype"), url("../fonts/Flaticon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.head_menu {
+  background: #fff;
+  height: 100px;
+}
+
+.head_menu .wraper {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.head_menu .wraper .logo {
+  float: left;
+}
+
+.head_menu .wraper .menu a.open_menu_btn {
+  position: relative;
+  float: right;
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: #2c78a3;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.head_menu .wraper .menu a.open_menu_btn:after,
+.head_menu .wraper .menu a.open_menu_btn:before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  position: inherit;
+  left: 0;
+}
+
+.head_menu .wraper .menu a.open_menu_btn:after {
+  bottom: -10px;
+}
+
+.head_menu .wraper .menu a.open_menu_btn:before {
+  top: -10px;
+}

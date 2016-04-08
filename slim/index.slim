@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    == Slim::Template.new('./partial/html_head.slim').render
+  body
+    == Slim::Template.new('./partial/header.slim').render                                  
+    .main_view_wraper
+      == Slim::Template.new('./content/main_page.slim').render 
+    == Slim::Template.new('./partial/footer.slim').render
