@@ -379,7 +379,7 @@ body {
 }
 
 .categorys_screen .list_category .item.item_text_1 {
-  background: rgba(44, 120, 163, 0.9);
+  background: rgba(163, 155, 44, 0.9);
 }
 
 .categorys_screen .list_category .item.item_text_2 {
@@ -387,11 +387,11 @@ body {
 }
 
 .categorys_screen .list_category .item.item_text_3 {
-  background: rgba(87, 214, 153, 0.9);
+  background: rgba(70, 188, 1, 0.9);
 }
 
 .categorys_screen .list_category .item.item_text_4 {
-  background: rgba(220, 187, 65, 0.9);
+  background: rgba(255, 144, 0, 0.9);
 }
 
 .categorys_screen .list_category .item.item_text_5 {
@@ -399,7 +399,7 @@ body {
 }
 
 .categorys_screen .list_category .item.item_text_6 {
-  background: rgba(132, 159, 255, 0.9);
+  background: rgba(89, 126, 255, 0.9);
 }
 
 .for_bottom_screen {
