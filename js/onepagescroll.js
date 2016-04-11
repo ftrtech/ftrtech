@@ -15,6 +15,11 @@
  * ========================================================== */
 	
 function onePageScroll(element, options) {
+    console.log(window.innerWidth)
+    if(window.innerWidth<1000){
+      element = false;
+      document.body.style.overflow = 'auto';
+    };
   
   var defaults = {
 	    	sectionContainer: "section",
@@ -26,7 +31,8 @@ function onePageScroll(element, options) {
 	    	beforeMove: null,
 	    	afterMove: null,
 	    	loop: false,
-	    	responsiveFallback: false
+	    	responsiveFallback: false,
+        workFromScreen: 1000
 	    },
 	    _root = this,
 	    settings = Object.extend({}, defaults, options),

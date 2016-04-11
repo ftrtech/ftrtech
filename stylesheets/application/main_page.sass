@@ -20,11 +20,14 @@
 
 
 body
-  font-size: 10px
+  font-size: 8px
 .wraper
   margin: 0 auto
-  max-width: 1040px
-  padding: 0 20px  
+  max-width: 900px
+  padding: 0 20px 
+.main_view_wraper
+  max-width: 900px
+  margin: 0 auto 
 .head_menu
   background: #fff
   height: 100px
@@ -65,7 +68,8 @@ body
 
 .welcome_screen
   background: url(../img/bg_welcome_screen.png) no-repeat center
-  height: calc(100vh - 100px)
+  // height: calc(100vh - 100px)
+  height: 480px
   background-size: cover
   position: relative
   a.main_button
@@ -87,8 +91,9 @@ body
     margin-left: -20px
     animation: calltoaction 1.4s infinite linear;
 .about_screen
-  height: calc(100vh)
-  min-height: 750px
+  // height: calc(100vh)
+  height: 600px
+  // min-height: 750px
   position: relative
   overflow: hidden
   background: linear-gradient(to top, #195b80, #bfe7fe);
@@ -98,34 +103,38 @@ body
     width: auto
     max-width: 100%
     // min-width: 1040px
-    margin: 0 230px
+    margin: 0 150px
     position: relative
     &:after
       content: ''
       position: absolute
-      right: -230px
+      right: -150px
       top: 0
-      border-top: 50vh transparent solid
-      border-left: 230px #fff solid
-      border-bottom:  50vh transparent solid
+      // border-top: 50vh transparent solid
+      border-top: 300px transparent solid
+      // border-left: 230px #fff solid
+      border-left: 150px #fff solid
+      border-bottom:  300px transparent solid
     &:before
       content: ''
       position: absolute
-      left: -230px
+      left: -150px
       top: 0
-      border-top: 50vh transparent solid
-      border-right: 230px #fff solid
-      border-bottom:  50vh transparent solid
+      border-top: 300px transparent solid
+      border-right: 150px #fff solid
+      border-bottom:  300px transparent solid
     .wraper_inside
       position: absolute
       max-width: 770px
-      top: 47%
-      left: 50%
-      margin-left: -375px
+      top: 40%
+      // left: 50%
+      left: 0
+      // margin-left: -375px
+      margin-left: 0
       transform: translateY(-50%)
   .big_logo
-    width: 380px
-    height: 170px
+    width: 300px
+    height: 105px
     overflow: hidden
     margin: 0 auto
     img
@@ -137,7 +146,7 @@ body
     font-size: 3em
     .content_item 
       font-family: 'helveticaneuecyrUltralight'
-      margin-top: 40px
+      margin-top: 30px
     .slogan 
       font-family: 'helveticaneuecyrRoman'
       margin-top: 40px
