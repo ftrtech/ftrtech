@@ -10499,6 +10499,16 @@ return jQuery;
 })(jQuery, window, document);
 
 },{}],3:[function(require,module,exports){
+module.exports=[
+  {"url":"","index":"0","title":"home"},
+  {"url":"about","index":"1","title":"about us"},
+  {"url":"portfolio","index":"2","title":"portfolio"},
+  {"url":"expertise","index":"3","title":"expertise"},
+  {"url":"blog","index":"4","title":"blog"},
+  {"url":"contact","index":"5","title":"contact"}
+]
+
+},{}],4:[function(require,module,exports){
 // Main javascript entry point
 // Should handle bootstrapping/starting application
 
@@ -10515,7 +10525,7 @@ $(function() {
   })
 });
 
-},{"jquery":1}],4:[function(require,module,exports){
+},{"jquery":1}],5:[function(require,module,exports){
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -10523,34 +10533,29 @@ $(function() {
 
   ga('create', 'UA-79669736-1', 'auto');
   ga('send', 'pageview');
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 // Main javascript entry point
 // Should handle bootstrapping/starting application
 'use strict';
 
 var $ = require('jquery');
-require('./ga');
 window.jQuery = require('jquery');
-var Contact = require('./contact');
 var smoothState = require('smoothstate');
 
-$(function() {
-  var nav = [
-              {"url":"","index":"0"},
-              {"url":"about","index":"1"},
-              {"url":"portfolio","index":"2"},
-              {"url":"expertise","index":"3"},
+var Contact = require('./contact');
+var _menu = require('../_data/menu.json');
 
-              {"url":"contact","index":"4"}
-            ]
-            // {"url":"blog","index":"4"},
-            // {"url":"article","index":"4"},
+require('./ga');
+$(function() {
+  var nav = _menu;
+
+  // {"url":"blog","index":"4"},
+  // {"url":"article","index":"4"},
 
 
   $(document).on("click", "ul.portfolios a", function(e){
     e.preventDefault();
 
-    $(".portfolio-transition").toggleClass("out")
 
     var $el = $(this);
     var $list = $("ul.portfolios");
@@ -10570,7 +10575,30 @@ $(function() {
     setTimeout(function() {
       $("[data-portfolio-item='"+index+"']").addClass("animated").addClass("fadeIn").toggleClass("active");
     },300);
-  })
+  });
+
+  $(document).on("click", "[data-portfolio-arrow]", function(e){
+    e.preventDefault();
+
+    // $(".portfolio-transition").toggleClass("out")
+
+    var $el = $(this);
+
+    var index = $el.data("portfolio-arrow");
+    if(index == 2){
+      index = 0;
+    } else {
+      index++;
+    }
+
+    var activeArticle = $("[data-portfolio-item]:visible").addClass("animated").addClass("fadeOut").toggleClass("active");
+
+    $el.data("portfolio-arrow", index);
+
+    setTimeout(function() {
+      $("[data-portfolio-item='"+(index)+"']").addClass("animated").addClass("fadeIn").toggleClass("active");
+    },300);
+  });
 
   var recalculateLinks = function() {
     var url = window.location.pathname.split("/")[1];
@@ -10614,8 +10642,9 @@ $(function() {
             prev = obj[k.prev].url;
           }
 
-          if (i == 4) {
-            k.next = 5;
+          console.log(obj[i])
+          if (i == obj.length-1) {
+            k.next = obj.length-1;
             next = "";
           } else {
             k.next = Number(obj[i].index)+1;
@@ -10672,7 +10701,7 @@ $(function() {
   }).data('smoothState');
 });
 
-},{"./contact":3,"./ga":4,"jquery":1,"smoothstate":2}]},{},[5])
+},{"../_data/menu.json":3,"./contact":4,"./ga":5,"jquery":1,"smoothstate":2}]},{},[6])
 
 
 //# sourceMappingURL=main.js.map

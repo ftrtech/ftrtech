@@ -24,25 +24,27 @@
         <input id="toggle-nav" type="checkbox">
         <label id="toggle-nav-label" for="toggle-nav" class="animated fadeInDown"><i class="fa fa-bars"></i></label>
         <div class="nav-box">
-          <ul>
+          <ul class="menu">
             <li>
               <h1>MENU</h1>
             </li>
-            <li><a href="/" data-target="0">Home</a></li>
-            <li><a href="/about" data-target="1">About Us</a></li>
-            <li><a href="/portfolio" data-target="2">Portfolio</a></li>
-            <li><a href="/expertise" data-target="3">Expertise</a></li>
-            <li><a href="/contact" data-target="4">Contacts</a></li>
+            <li><a href="/" data-target="0">home</a></li>
+            <li><a href="/about" data-target="1">about us</a></li>
+            <li><a href="/portfolio" data-target="2">portfolio</a></li>
+            <li><a href="/expertise" data-target="3">expertise</a></li>
+            <li><a href="/blog" data-target="4">blog</a></li>
+            <li><a href="/contact" data-target="5">contact</a></li>
           </ul>
         </div>
       </div>
       <div class="right-side">
         <ul class="nav">
-          <li><a href="/" data-target="0">Home</a></li>
-          <li><a href="/about" data-target="1">About Us</a></li>
-          <li><a href="/portfolio" data-target="2">Portfolio</a></li>
-          <li><a href="/expertise" data-target="3">Expertise</a></li>
-          <li><a href="/contact" data-target="4">Contacts</a></li>
+          <li><a href="/" data-target="0">home</a></li>
+          <li><a href="/about" data-target="1">about us</a></li>
+          <li><a href="/portfolio" data-target="2">portfolio</a></li>
+          <li><a href="/expertise" data-target="3">expertise</a></li>
+          <li><a href="/blog" data-target="4">blog</a></li>
+          <li><a href="/contact" data-target="5">contact</a></li>
         </ul>
       </div>
       <div class="languages-mobile animated fadeInDown">
@@ -54,11 +56,11 @@
     <section class="navigation-horizontal"> 
       <ul class="numbers">
         <li class="leading-line"></li>
-        <li><a href="/" data-target="0">01</a></li>
-        <li><a href="/about" data-target="1">02</a></li>
-        <li><a href="/portfolio" data-target="2">03</a></li>
-        <li><a href="/expertise" data-target="3">04</a></li>
-        <li><a href="/contact" data-target="4">05</a></li>
+        <li><a href="/about" data-target="1">01</a></li>
+        <li><a href="/portfolio" data-target="2">02</a></li>
+        <li><a href="/expertise" data-target="3">03</a></li>
+        <li><a href="/blog" data-target="4">04</a></li>
+        <li><a href="/contact" data-target="5">05</a></li>
       </ul>
       <ul class="arrows">
         <li class="forward animated"><a href="#" data-arrow="next"><i class="fa fa-long-arrow-right"></i></a></li>
@@ -75,58 +77,61 @@
             <h1 class="headline animated fadeInRight">expertise</h1>
             <section class="content">
               <ul data-margin="30px" class="portfolios">
-                <li data-portfolio="0" class="active"><a href="#" class="no-smoothState">Server-side skills</a></li>
-                <li data-portfolio="1"><a href="#" class="no-smoothState">Front-end skills</a></li>
-                <li data-portfolio="2"><a href="#" class="no-smoothState">Mobile development skills</a></li>
+                <li data-portfolio="0" class="active"><a href="#" data-portfolio="0" class="no-smoothState">Server-side skills</a></li>
+                <li data-portfolio="1"><a href="#" data-portfolio="1" class="no-smoothState">Front-end skills</a></li>
+                <li data-portfolio="2"><a href="#" data-portfolio="2" class="no-smoothState">Mobile development skills</a></li>
               </ul>
-              <article data-portfolio-item="0" class="active">
-                <div class="content portfolio-transition">
-                  <div>
-                    <h4>Server-side skills</h4>
+              <div>
+                <article data-portfolio-item="0" class="active">
+                  <div class="content portfolio-transition">
+                    <div>
+                      <h4>Server-side skills</h4>
+                    </div>
+                    <ul class="skill-items">
+                      <li>Microsoft Azure</li>
+                      <li>Amazon Web Service</li>
+                      <li>Docker</li>
+                      <li>PHP</li>
+                      <li>ASP.NET</li>
+                      <li>Node.js</li>
+                      <li>MySQL</li>
+                      <li>MS SQL</li>
+                      <li>MongoDB</li>
+                      <li>Redis</li>
+                    </ul>
                   </div>
-                  <ul class="skill-items">
-                    <li>Microsoft Azure</li>
-                    <li>Amazon Web Service</li>
-                    <li>Docker</li>
-                    <li>PHP</li>
-                    <li>ASP.NET</li>
-                    <li>Node.js</li>
-                    <li>MySQL</li>
-                    <li>MS SQL</li>
-                    <li>MongoDB</li>
-                    <li>Redis</li>
-                  </ul>
-                </div>
-              </article>
-              <article data-portfolio-item="1">
-                <div class="content portfolio-transition">
-                  <div>
-                    <h4>Front-end skills</h4>
+                </article>
+                <article data-portfolio-item="1">
+                  <div class="content portfolio-transition">
+                    <div>
+                      <h4>Front-end skills</h4>
+                    </div>
+                    <ul class="skill-items">
+                      <li>HTML5</li>
+                      <li>Angular</li>
+                      <li>React</li>
+                      <li>Ember</li>
+                      <li>jQuery</li>
+                      <li>Grunt</li>
+                      <li>SASS</li>
+                      <li>LESS</li>
+                    </ul>
                   </div>
-                  <ul class="skill-items">
-                    <li>HTML5</li>
-                    <li>Angular</li>
-                    <li>React</li>
-                    <li>Ember</li>
-                    <li>jQuery</li>
-                    <li>Grunt</li>
-                    <li>SASS</li>
-                    <li>LESS</li>
-                  </ul>
-                </div>
-              </article>
-              <article data-portfolio-item="2">
-                <div class="content portfolio-transition">
-                  <div>
-                    <h4>Mobile development skills</h4>
+                </article>
+                <article data-portfolio-item="2">
+                  <div class="content portfolio-transition">
+                    <div>
+                      <h4>Mobile development skills</h4>
+                    </div>
+                    <ul class="skill-items">
+                      <li>iOS</li>
+                      <li>Android</li>
+                      <li>Xamarin</li>
+                    </ul>
                   </div>
-                  <ul class="skill-items">
-                    <li>iOS</li>
-                    <li>Android</li>
-                    <li>Xamarin</li>
-                  </ul>
-                </div>
-              </article>
+                </article>
+              </div>
+              <section class="controls"><a src="#" data-portfolio-arrow="0" class="no-smoothState arrow"><img src="../images/arrow.png"></a></section>
             </section>
           </div>
         </div>
