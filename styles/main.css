@@ -1932,6 +1932,11 @@ ul {
   margin-left: 152px;
   margin-top: 30px;
 }
+@-moz-document url-prefix() {
+  #about .content .main-content .page-content .right-side .spans {
+    margin-top: 150px;
+  }
+}
 #about .content .main-content .page-content .right-side .spans span {
   color: #525a5d;
   font-size: 24px;
@@ -2950,6 +2955,11 @@ ul {
   transition: top .1s linear;
   min-height: 100%;
   margin-top: 440px;
+}
+@-moz-document url-prefix() {
+  #portfolio .content .main-content section.content ul.portfolios {
+    margin-top: 210px;
+  }
 }
 @media only screen and (max-width: 650px) {
   #portfolio .content .main-content section.content ul.portfolios {

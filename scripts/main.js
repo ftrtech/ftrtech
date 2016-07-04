@@ -10541,7 +10541,7 @@ $(function() {
               {"url":"portfolio","index":"2"},
               {"url":"expertise","index":"3"},
 
-              {"url":"contact","index":"5"}
+              {"url":"contact","index":"4"}
             ]
             // {"url":"blog","index":"4"},
             // {"url":"article","index":"4"},
