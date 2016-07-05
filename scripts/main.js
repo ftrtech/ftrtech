@@ -10505,6 +10505,7 @@ module.exports=[
   {"url":"portfolio","index":"2","title":"portfolio"},
   {"url":"expertise","index":"3","title":"expertise"},
   {"url":"blog","index":"4","title":"blog"},
+  {"url":"article","index":"4","title":"article","hidden":true},
   {"url":"contact","index":"5","title":"contact"}
 ]
 
@@ -10570,7 +10571,7 @@ $(function() {
     $el.parent().toggleClass("active");
     $list.css({top: marginStep * index});
 
-    console.log(index);
+
 
     setTimeout(function() {
       $("[data-portfolio-item='"+index+"']").addClass("animated").addClass("fadeIn").toggleClass("active");
@@ -10602,7 +10603,9 @@ $(function() {
 
   var recalculateLinks = function() {
     var url = window.location.pathname.split("/")[1];
-    var links = searchObj(nav,url)
+    var links = searchObj(nav,url);
+
+    console.log(links)
 
     $("[data-arrow=next]").attr({"href":"/"+links.next,"data-target":links.k.next});
     $("[data-arrow=prev]").attr({"href":"/"+links.prev,"data-target":links.k.prev});
@@ -10610,31 +10613,24 @@ $(function() {
     $(".navigation-horizontal [data-target='"+links.k.active+"']").toggleClass("active");
     $(".navigation-main [data-target='"+links.k.active+"']").toggleClass("active");
 
-    console.log($(".nav-box [data-target='"+links.k.active+"']"),links.k.active)
-    // .toggleClass("active");
+
     $(window).load(function(){
       document.querySelector(".side-nav").style.height = Math.max($("body").height())-1+"px"
-      // $('section .content').addClass('animated fadeOut');
     });
 
 
   }
 
-  var updateListLinePosition = function(marginStep, index) {
-    console.log(marginStep, index)
-    // document.styleSheets[0].addRule('ul.portfolios:before', 'margin-top:'+marginStep+'px');
-  }
 
   recalculateLinks();
 
-  updateListLinePosition(30,1);
-
   function searchObj(obj, searchVal) {
+    console.log(1);
     for (var i = 0 ; i < obj.length ; i++) {
-      if (obj[i].url == searchVal) {
+      if (obj[i].url == searchVal && !obj[i].hidden) {
           var next, prev, k = {} ;
 
-          if (i == 0) {
+          if (obj[i].index == 0) {
             k.prev = -1;
             prev = "contact";
           } else {
@@ -10642,17 +10638,19 @@ $(function() {
             prev = obj[k.prev].url;
           }
 
-          console.log(obj[i])
-          if (i == obj.length-1) {
+          if (obj[i].index == obj[obj.length-1].index) {
             k.next = obj.length-1;
             next = "";
           } else {
-            k.next = Number(obj[i].index)+1;
+            if(obj[i+1].hidden) {
+              k.next = Number(obj[i].index)+2;
+            } else {
+              k.next = Number(obj[i].index)+1;
+            }
             next = obj[k.next].url;
           }
-
+          console.log(obj[i].hidden)
           k.active = obj[i].index;
-
           return {prev:prev,next:next,k:k};
       }
     }
