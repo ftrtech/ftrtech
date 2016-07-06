@@ -10510,23 +10510,6 @@ module.exports=[
 ]
 
 },{}],4:[function(require,module,exports){
-// Main javascript entry point
-// Should handle bootstrapping/starting application
-
-'use strict';
-
-var $ = require('jquery');
-
-$(function() {
-  $('#toggle-nav-label').on('click',function() {
-  	console.log('Welcome to contact!');
-  	$('.logo').toggleClass("nav-opened")
-
-  	$('#toggle-nav-label .fa').toggleClass("fa-bars").toggleClass("fa-times");
-  })
-});
-
-},{"jquery":1}],5:[function(require,module,exports){
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -10534,29 +10517,23 @@ $(function() {
 
   ga('create', 'UA-79669736-1', 'auto');
   ga('send', 'pageview');
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 // Main javascript entry point
 // Should handle bootstrapping/starting application
 'use strict';
 
-var $ = require('jquery');
-window.jQuery = require('jquery');
+var $ = require('jquery'); window.jQuery = require('jquery');
 var smoothState = require('smoothstate');
 
-var Contact = require('./contact');
 var _menu = require('../_data/menu.json');
 
 require('./ga');
+
 $(function() {
   var nav = _menu;
 
-  // {"url":"blog","index":"4"},
-  // {"url":"article","index":"4"},
-
-
   $(document).on("click", "ul.portfolios a", function(e){
     e.preventDefault();
-
 
     var $el = $(this);
     var $list = $("ul.portfolios");
@@ -10699,7 +10676,7 @@ $(function() {
   }).data('smoothState');
 });
 
-},{"../_data/menu.json":3,"./contact":4,"./ga":5,"jquery":1,"smoothstate":2}]},{},[6])
+},{"../_data/menu.json":3,"./ga":4,"jquery":1,"smoothstate":2}]},{},[5])
 
 
 //# sourceMappingURL=main.js.map
