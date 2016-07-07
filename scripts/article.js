@@ -11362,7 +11362,60 @@ $(function() {
     swipePropagation: false,
     useBothWheelAxes: true
   });
+
+  $(".languages").toggleClass("visible");
+
+  var location = handleLocation();
+  console.log(location.en.href);
+  $("[data-language-link='ru']").attr("href",location.ru.href);
+  $("[data-language-link='en']").attr("href",location.en.href);
+  $("[data-language-link='"+ location.active +"']").parent().toggleClass("active");
+
+  $(document).on("click", ".languages.visible a", function(e){
+    e.preventDefault();
+
+    console.log(e)
+  });
+
 });
+
+var handleLocation = function() {
+  var location = window.location.pathname.split("/").slice(0,4);
+  var returnLocation = {en:{},ru:{}};
+  var ll = location.length-1;
+  var language = location[ll];
+  switch (language) {
+    case "en":
+      returnLocation.en.href = "#";
+      returnLocation.ru.href = window.location.pathname+"../";
+      returnLocation.active = "en"
+
+      var ruHref = returnLocation.ru.href.split("/");
+      if(ruHref[ruHref.length-2] == "en..") {
+        ruHref[ruHref.length-2] = "";
+      }
+
+
+      returnLocation.ru.href = ruHref.slice(0,ruHref.length-1).join("/");
+
+      console.log(ruHref,returnLocation.ru.href)
+
+      break;
+    case "":
+      returnLocation.en.href = "en"
+      returnLocation.ru.href = "#"
+      returnLocation.active = "ru"
+      break;
+    case "ru":
+      returnLocation.en.href = "en"
+      returnLocation.ru.href = "#"
+      returnLocation.active = "ru"
+      break;
+    default:
+  }
+
+  return returnLocation;
+}
 
 },{"jquery":1,"perfect-scrollbar":2}]},{},[23])
 
