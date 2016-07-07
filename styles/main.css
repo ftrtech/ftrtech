@@ -3079,6 +3079,7 @@ ul {
   max-width: 70%;
   line-height: 1;
   padding-left: 50px;
+  z-index: 3;
 }
 @media only  screen and (min-device-width : 320px) and (max-device-width : 800px) {
   #article .left-side > .content .article-header .headline {
@@ -3106,13 +3107,18 @@ ul {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 120px 10px 10px 0;
+  padding: 50px 10px 10px 0;
   height: 100%;
 }
 @media only  screen and (min-device-width : 320px) and (max-device-width : 800px) {
   #article .left-side > .content .main-content {
     padding: 40px 0 0 0;
   }
+}
+#article .left-side > .content .main-content section.content {
+  overflow: scroll !important;
+  margin-top: 110px;
+  padding: 0;
 }
 #article .left-side > .content .main-content .content {
   display: -webkit-box;
