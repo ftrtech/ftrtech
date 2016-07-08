@@ -13251,7 +13251,6 @@ $(function() {
     var url = window.location.pathname.split("/")[1];
     var links = searchObj(nav,url);
 
-    console.log(links)
 
     $("[data-arrow=next]").attr({"href":"/"+links.next,"data-target":links.k.next});
     $("[data-arrow=prev]").attr({"href":"/"+links.prev,"data-target":links.k.prev});
@@ -13271,12 +13270,10 @@ $(function() {
   recalculateLinks();
 
   function searchObj(obj, searchVal) {
-    console.log(1);
 
     for (var i = 0 ; i < obj.length ; i++) {
       if (obj[i].url == searchVal && obj[i].visible) {
           var next, prev, k = {} ;
-          console.log(obj[i]);
           if (obj[i].index == 0) {
             k.prev = -1;
             prev = "contact";

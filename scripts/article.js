@@ -11369,7 +11369,6 @@ $(function() {
   $(".languages").toggleClass("visible");
 
   var location = handleLocation();
-  console.log(location.en.href);
   $("[data-language-link='ru']").attr("href",location.ru.href);
   $("[data-language-link='en']").attr("href",location.en.href);
   $("[data-language-link='"+ location.active +"']").parent().toggleClass("active");
@@ -11377,7 +11376,6 @@ $(function() {
   $(document).on("click", ".languages.visible a", function(e){
     e.preventDefault();
 
-    console.log(e)
   });
 
 });
@@ -11401,7 +11399,6 @@ var handleLocation = function() {
 
       returnLocation.ru.href = ruHref.slice(0,ruHref.length-1).join("/");
 
-      console.log(ruHref,returnLocation.ru.href)
 
       break;
     case "":
