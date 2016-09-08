@@ -11351,70 +11351,73 @@ module.exports = function (element) {
 };
 
 },{"../lib/dom":4,"../lib/helper":7,"./instances":19,"./update-geometry":20,"./update-scroll":21}],23:[function(require,module,exports){
-
 'use strict';
 
-var $ = require('jquery'); window.jQuery = require('jquery');
+var $ = require('jquery');
+window.jQuery = require('jquery');
 var Ps = require('perfect-scrollbar');
 var mobileDetect = require('./features/mobile-detect')();
 
-$(function() {
-  if(!mobileDetect) {
-      swipePropagation: false,
-      Ps.initialize(document.querySelector("#article article .content"), {
-      useBothWheelAxes: true
+$(function () {
+    if (!mobileDetect) {
+        swipePropagation: false,
+        Ps.initialize(document.querySelector("#article article .content"), {
+            useBothWheelAxes: true
+        });
+    }
+
+    $(".languages").toggleClass("visible");
+
+    var location = handleLocation();
+    console.log(location.en.href);
+    $("[data-language-link='ru']").attr("href", location.ru.href);
+    $("[data-language-link='en']").attr("href", location.en.href);
+    $("[data-language-link='" + location.active + "']").parent().toggleClass("active");
+
+    $(document).on("click", ".languages.visible a", function (e) {
+        e.preventDefault();
+
+        console.log(e)
     });
-  }
-
-  $(".languages").toggleClass("visible");
-
-  var location = handleLocation();
-  $("[data-language-link='ru']").attr("href",location.ru.href);
-  $("[data-language-link='en']").attr("href",location.en.href);
-  $("[data-language-link='"+ location.active +"']").parent().toggleClass("active");
-
-  $(document).on("click", ".languages.visible a", function(e){
-    e.preventDefault();
-
-  });
 
 });
 
-var handleLocation = function() {
-  var location = window.location.pathname.split("/").slice(0,4);
-  var returnLocation = {en:{},ru:{}};
-  var ll = location.length-1;
-  var language = location[ll];
-  switch (language) {
-    case "en":
-      returnLocation.en.href = "#";
-      returnLocation.ru.href = window.location.pathname+"../";
-      returnLocation.active = "en"
+var handleLocation = function () {
+    var location = window.location.pathname.split("/").slice(0, 4);
+    var returnLocation = {en: {}, ru: {}};
+    var ll = location.length - 1;
+    var language = location[ll];
+    switch (language) {
+        case "en":
+            returnLocation.en.href = "#";
+            returnLocation.ru.href = window.location.pathname + "../";
+            returnLocation.active = "en"
 
-      var ruHref = returnLocation.ru.href.split("/");
-      if(ruHref[ruHref.length-2] == "en..") {
-        ruHref[ruHref.length-2] = "";
-      }
-
-
-      returnLocation.ru.href = ruHref.slice(0,ruHref.length-1).join("/");
+            var ruHref = returnLocation.ru.href.split("/");
+            if (ruHref[ruHref.length - 2] == "en..") {
+                ruHref[ruHref.length - 2] = "";
+            }
 
 
-      break;
-    case "":
-      returnLocation.en.href = "en"
-      returnLocation.ru.href = "#"
-      returnLocation.active = "ru"
-      break;
-    case "ru":
-      returnLocation.en.href = "en"
-      returnLocation.ru.href = "#"
-      returnLocation.active = "ru"
-      break;
-    default:
-  }
+            returnLocation.ru.href = ruHref.slice(0, ruHref.length - 1).join("/");
 
-  return returnLocation;
+            console.log(ruHref, returnLocation.ru.href)
+
+            break;
+        case "":
+            returnLocation.en.href = "en"
+            returnLocation.ru.href = "#"
+            returnLocation.active = "ru"
+            break;
+        case "ru":
+            returnLocation.en.href = "en"
+            returnLocation.ru.href = "#"
+            returnLocation.active = "ru"
+            break;
+        default:
+    }
+
+    return returnLocation;
 }
 
 },{"./features/mobile-detect":24,"jquery":1,"perfect-scrollbar":2}],24:[function(require,module,exports){
