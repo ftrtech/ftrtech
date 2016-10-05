@@ -11360,8 +11360,9 @@ var mobileDetect = require('./features/mobile-detect')();
 
 $(function () {
     if (!mobileDetect) {
-        swipePropagation: false,
-        Ps.initialize(document.querySelector("#article article .content"), {
+        swipePropagation: false;
+        //Ps.initialize(document.querySelector("#article article .article_content"), {
+        Ps.initialize(document.querySelector("#article .popup_content"), {
             useBothWheelAxes: true
         });
     }
@@ -11369,7 +11370,7 @@ $(function () {
     $(".languages").toggleClass("visible");
 
     var location = handleLocation();
-    console.log(location.en.href);
+
     $("[data-language-link='ru']").attr("href", location.ru.href);
     $("[data-language-link='en']").attr("href", location.en.href);
     $("[data-language-link='" + location.active + "']").parent().toggleClass("active");
@@ -11377,7 +11378,6 @@ $(function () {
     $(document).on("click", ".languages.visible a", function (e) {
         e.preventDefault();
 
-        console.log(e)
     });
 
 });
@@ -11391,34 +11391,33 @@ var handleLocation = function () {
         case "en":
             returnLocation.en.href = "#";
             returnLocation.ru.href = window.location.pathname + "../";
-            returnLocation.active = "en"
+            returnLocation.active = "en";
 
             var ruHref = returnLocation.ru.href.split("/");
             if (ruHref[ruHref.length - 2] == "en..") {
                 ruHref[ruHref.length - 2] = "";
             }
 
-
             returnLocation.ru.href = ruHref.slice(0, ruHref.length - 1).join("/");
 
-            console.log(ruHref, returnLocation.ru.href)
+            console.log(ruHref, returnLocation.ru.href);
 
             break;
         case "":
-            returnLocation.en.href = "en"
-            returnLocation.ru.href = "#"
-            returnLocation.active = "ru"
+            returnLocation.en.href = "en";
+            returnLocation.ru.href = "#";
+            returnLocation.active = "ru";
             break;
         case "ru":
-            returnLocation.en.href = "en"
-            returnLocation.ru.href = "#"
-            returnLocation.active = "ru"
+            returnLocation.en.href = "en";
+            returnLocation.ru.href = "#";
+            returnLocation.active = "ru";
             break;
         default:
     }
 
     return returnLocation;
-}
+};
 
 },{"./features/mobile-detect":24,"jquery":1,"perfect-scrollbar":2}],24:[function(require,module,exports){
 'use strict';

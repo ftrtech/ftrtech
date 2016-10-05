@@ -11359,12 +11359,17 @@ var mobileDetect = require('./features/mobile-detect')();
 
 $(function() {
   if(!mobileDetect) {
-    Ps.initialize(document.querySelector("#blog section.content"), {
+    //Ps.initialize(document.querySelector("#blog  .main-content section.selection_content"), {
+    Ps.initialize(document.querySelector("section.selection_content"), {
       swipePropagation: false,
       useBothWheelAxes: true
     });
   }
+
+
 });
+
+
 
 },{"./features/mobile-detect":24,"jquery":1,"perfect-scrollbar":2}],24:[function(require,module,exports){
 'use strict';

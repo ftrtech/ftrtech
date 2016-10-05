@@ -13171,7 +13171,8 @@ module.exports = mobileDetect;
 // Should handle bootstrapping/starting application
 'use strict';
 
-var $ = require('jquery'); window.jQuery = require('jquery');
+var $ = require('jquery');
+window.jQuery = require('jquery');
 var smoothState = require('smoothstate');
 var Hammer = require('hammerjs');
 
@@ -13179,172 +13180,313 @@ var _menu = require('../_data/menu.json');
 
 var mobileDetect = require('./features/mobile-detect')();
 
-$(function() {
-  var nav = _menu;
+$(function () {
+        var nav = _menu;
 
-  if(mobileDetect) {
-    var stage = document.getElementById('content-wrapper');
-    var mc = new Hammer.Manager(stage);
+        PopUpHide();
 
-    var Swipe = new Hammer.Swipe();
+        if (mobileDetect) {
+            var stage = document.getElementById('content-wrapper');
+            var mc = new Hammer.Manager(stage);
 
-    // add the recognizer
-    // mc.add(Swipe);
+            var Swipe = new Hammer.Swipe();
 
-    // subscribe to events
-    mc.on('swipeleft', function(e) { //   <-
-      document.querySelector('[data-arrow="next"]').click()
-    });
+            // add the recognizer
+            // mc.add(Swipe);
 
-    mc.on('swiperight', function(e) { //   ->
-      document.querySelector('[data-arrow="prev"]').click()
-    });
-  }
+            // subscribe to events
+            mc.on('swipeleft', function (e) { //   <-
+                document.querySelector('[data-arrow="next"]').click()
+            });
 
-  $(document).on("click", "ul.portfolios a", function(e){
-    e.preventDefault();
+            mc.on('swiperight', function (e) { //   ->
+                document.querySelector('[data-arrow="prev"]').click()
+            });
 
-    var $el = $(this);
-    var $list = $("ul.portfolios");
-    var marginStep = -40;
-    var index = $el.parent().data("portfolio");
-    var activeArticle = $("[data-portfolio-item]:visible").addClass("animated").addClass("fadeOut").toggleClass("active");
+        }
 
-    $.each($("ul.portfolios li"), function(k,v) {
-      $(v).removeClass("active");
-    })
+        $('#portfolio, #expertise').bind("mousewheel DOMMouseScroll", scrollHandler);
 
-    $el.parent().toggleClass("active");
-    $list.css({top: marginStep * index});
+        if (mobileDetect) {
+            $('#portfolio, #expertise').off("mousewheel DOMMouseScroll", scrollHandler);
+        }
 
 
+        $(document).on("click", "ul.portfolios a", function (e) {
+            e.preventDefault();
 
-    setTimeout(function() {
-      $("[data-portfolio-item='"+index+"']").addClass("animated").addClass("fadeIn").toggleClass("active");
-    },300);
-  });
+            console.log("click");
+            var $el = $(this);
+            var $list = $("ul.portfolios");
+            var marginStep = -40;
+            var index = $el.parent().data("portfolio");
+            var activeArticle = $("[data-portfolio-item]:visible").addClass("animated").addClass("fadeOut").toggleClass("active");
 
-  $(document).on("click", "[data-portfolio-arrow]", function(e){
-    e.preventDefault();
+            $.each($("ul.portfolios li"), function (k, v) {
+                $(v).removeClass("active");
+            });
 
-    // $(".portfolio-transition").toggleClass("out")
+            $el.parent().toggleClass("active");
+            $list.css({top: marginStep * index});
 
-    var $el = $(this);
+            //setTimeout(function () {
+            $("[data-portfolio-item='" + index + "']").addClass("animated").addClass("fadeIn").toggleClass("active");
+            //}, 300);
+        });
 
-    var index = $el.data("portfolio-arrow");
-    if(index == 2){
-      index = 0;
-    } else {
-      index++;
-    }
+        $(document).on("click", "[data-portfolio-arrow]", function (e) {
+            e.preventDefault();
 
-    var activeArticle = $("[data-portfolio-item]:visible").addClass("animated").addClass("fadeOut").toggleClass("active");
+            //$(".portfolio-transition").toggleClass("out")
 
-    $el.data("portfolio-arrow", index);
+            var $el = $(this);
 
-    setTimeout(function() {
-      $("[data-portfolio-item='"+(index)+"']").addClass("animated").addClass("fadeIn").toggleClass("active");
-    },300);
-  });
-
-  var recalculateLinks = function() {
-    var url = window.location.pathname.split("/")[1];
-    var links = searchObj(nav,url);
-
-    console.log(links)
-
-    $("[data-arrow=next]").attr({"href":"/"+links.next,"data-target":links.k.next});
-    $("[data-arrow=prev]").attr({"href":"/"+links.prev,"data-target":links.k.prev});
-
-    $(".navigation-horizontal [data-target='"+links.k.active+"']").toggleClass("active");
-    $(".navigation-main [data-target='"+links.k.active+"']").toggleClass("active");
-
-
-    $(window).load(function(){
-      document.querySelector(".side-nav").style.height = Math.max($("body").height())-1+"px"
-    });
-
-
-  }
-
-
-  recalculateLinks();
-
-  function searchObj(obj, searchVal) {
-    console.log(1);
-
-    for (var i = 0 ; i < obj.length ; i++) {
-      if (obj[i].url == searchVal && obj[i].visible) {
-          var next, prev, k = {} ;
-          console.log(obj[i]);
-          if (obj[i].index == 0) {
-            k.prev = -1;
-            prev = "contact";
-          } else {
-            k.prev = Number(obj[i].index)-1;
-            prev = obj[k.prev].url;
-          }
-
-          if (obj[i].index == obj[obj.length-1].index) {
-            k.next = obj.length-1;
-            next = "";
-          } else {
-            if(!obj[i+1].visible) {
-              k.next = Number(obj[i].index)+2;
+            var index = $el.data("portfolio-arrow");
+            if (index == 2) {
+                index = 0;
             } else {
-              k.next = Number(obj[i].index)+1;
+                index++;
             }
-            next = obj[k.next].url;
-          }
 
-          k.active = obj[i].index;
-          return {prev:prev,next:next,k:k};
-      }
+            var activeArticle = $("[data-portfolio-item]:visible").addClass("animated").addClass("fadeOut").toggleClass("active");
+
+
+            $el.data("portfolio-arrow", index);
+
+            setTimeout(function () {
+                $("[data-portfolio-item='" + (index) + "']").addClass("animated").addClass("fadeIn").toggleClass("active");
+            }, 300);
+        });
+
+        var recalculateLinks = function () {
+            var url = window.location.pathname.split("/")[1];
+            var links = searchObj(nav, url);
+
+
+            $("[data-arrow=next]").attr({"href": "/" + links.next, "data-target": links.k.next});
+            $("[data-arrow=prev]").attr({"href": "/" + links.prev, "data-target": links.k.prev});
+
+            $(".navigation-horizontal [data-target='" + links.k.active + "']").toggleClass("active");
+            $(".navigation-main [data-target='" + links.k.active + "']").toggleClass("active");
+
+
+            $(window).load(function () {
+                document.querySelector(".side-nav").style.height = Math.max($("body").height()) - 1 + "px"
+            });
+        };
+
+
+        recalculateLinks();
+
+        function searchObj(obj, searchVal) {
+            //console.log(1);
+
+            for (var i = 0; i < obj.length; i++) {
+                if (obj[i].url == searchVal && obj[i].visible) {
+                    var next, prev, k = {};
+
+                    if (obj[i].index == 0) {
+                        k.prev = -1;
+                        prev = "contact";
+                    } else {
+                        k.prev = Number(obj[i].index) - 1;
+                        prev = obj[k.prev].url;
+                    }
+
+                    if (obj[i].index == obj[obj.length - 1].index) {
+                        k.next = obj.length - 1;
+                        next = "";
+                    } else {
+                        if (!obj[i + 1].visible) {
+                            k.next = Number(obj[i].index) + 2;
+                        } else {
+                            k.next = Number(obj[i].index) + 1;
+                        }
+                        next = obj[k.next].url;
+                    }
+
+                    k.active = obj[i].index;
+                    return {prev: prev, next: next, k: k};
+                }
+            }
+        }
+
+
+        if (location.href.indexOf("#") != -1) {
+            PopUpShow();
+        } else {
+            PopUpHide();
+        }
+
+        $('.popup').click(function (event) {
+            event.preventDefault();
+            //var href = $(this).attr('href').slice(5);
+            history.pushState({page: "popup"}, '', "#/" + "BUILD-STUFF-15-Robert-C-Martin-Uncle-Bob-interview/");
+            PopUpShow();
+
+        });
+
+        $('.close_article').on("click", function () {
+            event.preventDefault();
+            window.location = "/blog";
+        });
+
+        $(window).on('popstate', function (e) {
+            console.log(e.originalEvent.state);
+        });
+
+        $('.b-popup').click(function (event) {
+            if (event.target == this) {
+                event.preventDefault();
+                PopUpHide();
+                window.history.pushState({page: "popupclose"}, "", "/blog");
+            }
+        });
+
+        function PopUpShow() {
+            $(".b-popup").show();
+        }
+
+        function PopUpHide() {
+            $(".b-popup").hide();
+        }
+
+        $(window).load(function () {
+            document.querySelector(".popup_content").style.height = Math.max($("body").height()) - 1 + "px"
+        });
+
+        var startPos = 0;
+
+
+        function scrollHandler(e, delta) {
+            var scroll = $('#portfolio, #expertise');
+            scroll.unbind("mousewheel DOMMouseScroll", scrollHandler);
+
+            var self = $('.portfolios');
+            var e0 = e.originalEvent,
+                delta = e0.wheelDelta || -e0.detail;
+
+            var activeArticle = $("[data-portfolio-item]:visible").addClass("animated").addClass("fadeOut").toggleClass("active");
+            var index, currentLi;
+
+            $.each($("ul.portfolios li"), function (k, v) {
+                $(v).removeClass("active");
+            });
+
+            if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+                var d = delta * 40;
+                startPos = startPos - (d / 3);
+            } else if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+                startPos = startPos - (delta / 3) * 10;
+            } else {
+                startPos = startPos - (delta / 3);
+            }
+
+            if (delta / 120 > 0) {
+                //console.log('scrolling up !');
+                self.css("top", startPos);
+
+            } else {
+                //console.log('scrolling down !');
+                self.css("top", startPos);
+            }
+            //console.log(startPos);
+
+            if (startPos >= 40 || startPos > 0) {
+                startPos = 0;
+                self.css("top", startPos);
+            }
+
+            if (startPos === 0) {
+                index = 0;
+                currentLi = self.children().get(index);
+                $(currentLi).toggleClass("active");
+                $("[data-portfolio-item='" + index + "']").addClass("animated").addClass("fadeIn").toggleClass("active");
+
+            }
+            if (startPos === -40 || startPos > -40 && startPos < 0 || startPos < -40 && startPos > -80) {
+                index = 1;
+                currentLi = self.children().get(index);
+                $(currentLi).toggleClass("active");
+                $("[data-portfolio-item='" + index + "']").addClass("animated").addClass("fadeIn").toggleClass("active");
+                startPos = -40;
+                self.css("top", startPos);
+            }
+            if (startPos === -80) {
+                index = 2;
+                currentLi = self.children().get(index);
+                $(currentLi).toggleClass("active");
+                $("[data-portfolio-item='" + index + "']").addClass("animated").addClass("fadeIn").toggleClass("active");
+            }
+
+
+            if (startPos <= -120 || startPos < -80) {
+                index = 2;
+                currentLi = self.children().get(index);
+                $(currentLi).toggleClass("active");
+                $("[data-portfolio-item='" + index + "']").addClass("animated").addClass("fadeIn").toggleClass("active");
+                startPos = -80;
+                self.css("top", startPos);
+            }
+            e.preventDefault();
+
+            // HERE I WANT TO REBIND THE EVENT:
+            scroll.bind("mousewheel DOMMouseScroll", scrollHandler);
+        }
+
+        var $body = $('body'),
+            $main = $('#content-wrapper'),
+            $site = $('html, body'),
+            transition = 'fade',
+            smoothState;
+            $main.attr('data-transition', "fade");
+
+        smoothState = $main.smoothState({
+            //debug: true,
+            prefetch: true,
+            //cacheLength: 2,
+            blacklist: '.no-smoothState',
+            onBefore: function ($anchor, $container) {
+
+            },
+            onStart: {
+                duration: 400,
+                render: function (url, $container) {
+                    $("body").toggleClass('no-overflow');
+                    $main.addClass('is-exiting');
+
+                    $main.fadeOut(400,function(){
+                        $main.fadeIn(400);
+                    });
+                    //smoothState.restartCSSAnimations();
+                }
+            },
+            onReady: {
+                duration: 0,
+                render: function ($container, $newContent) {
+                    $container.html($newContent);
+                    $container.removeClass('is-exiting');
+                    recalculateLinks();
+                    $("body").toggleClass('no-overflow');
+
+                    $('#portfolio, #expertise').bind("mousewheel DOMMouseScroll", scrollHandler);
+
+                    $('.popup').click(function (event) {
+                        event.preventDefault();
+
+                        history.pushState({page: "popup"}, '', "#/" + "BUILD-STUFF-15-Robert-C-Martin-Uncle-Bob-interview/");
+                        PopUpShow();
+                    });
+
+                }
+            }
+        }).data('smoothState');
     }
-  }
-  var $body = $('body'),
-      $main = $('#content-wrapper'),
-      $site = $('html, body'),
-      transition = 'fade',
-      smoothState;
-
-  smoothState = $main.smoothState({
-      blacklist: '.no-smoothState',
-      onBefore: function($anchor, $container) {
-          var current = $('[data-viewport]').first().data('viewport'),
-              target = $anchor.data('target');
-          current = current ? current : 0;
-          target = target ? target : 0;
-          if (current === target) {
-              transition = 'fade';
-          } else if (current < target) {
-              transition = 'moveright';
-          } else {
-              transition = 'moveleft';
-          }
-      },
-      onStart: {
-          duration: 400,
-          render: function (url, $container) {
-              $("body").toggleClass('no-overflow');
-              $main.attr('data-transition', transition);
-              $main.addClass('is-exiting');
-          }
-      },
-      onReady: {
-          duration: 0,
-          render: function ($container, $newContent) {
-              $container.html($newContent);
-              $container.removeClass('is-exiting');
-              recalculateLinks();
-              $("body").toggleClass('no-overflow');
-              $site.animate({scrollTop: 0});
+);
 
 
-          }
-      },
-  }).data('smoothState');
-});
+
+
 
 },{"../_data/menu.json":4,"./features/mobile-detect":5,"hammerjs":1,"jquery":2,"smoothstate":3}]},{},[6])
 
