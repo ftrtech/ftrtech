@@ -665,44 +665,565 @@ th {
           animation: pulse 2s 1;
   -moz-animation: pulse 2s 1;
 }
-@-webkit-keyframes pulse {
-  0% {
-    background: url('../images/logo/logo.png') no-repeat 0 0;
-    background-size: 100% 100%;
-    width: 110px;
-    height: 27px;
+@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+  .navigation-main .left-side .logo {
+    width: 80px;
+    height: 19px;
+    margin-top: 5px;
   }
-  50% {
-    background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
-    background-size: 100% 100%;
-    width: 110px;
-    height: 27px;
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
   }
-  100% {
-    background: url('../images/logo/logo.png') no-repeat 0 0;
-    background-size: 100% 100%;
-    width: 110px;
-    height: 27px;
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
   }
 }
-@keyframes pulse {
-  0% {
-    background: url('../images/logo/logo.png') no-repeat 0 0;
-    background-size: 100% 100%;
-    width: 110px;
-    height: 27px;
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  .navigation-main .left-side .logo {
+    width: 80px;
+    height: 19px;
+    margin-top: 7px;
   }
-  50% {
-    background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
-    background-size: 100% 100%;
-    width: 110px;
-    height: 27px;
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
   }
-  100% {
-    background: url('../images/logo/logo.png') no-repeat 0 0;
-    background-size: 100% 100%;
-    width: 110px;
-    height: 27px;
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  .navigation-main .left-side .logo {
+    width: 80px;
+    height: 19px;
+    margin-top: 7px;
+  }
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 80px;
+      height: 19px;
+    }
+  }
+}
+@media only screen and (min-width: 1920px) {
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+}
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+}
+@media only screen and (min-width: 768px)and (max-width: 1024px) and (orientation: landscape) {
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+}
+@media only screen and (min-width: 768px)and (max-width: 1024px) and (orientation: portrait) {
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+}
+@media only screen and (max-width: 768px)  and (orientation: landscape) {
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
+  @-webkit-keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    50% {
+      background: url('../images/logo/logo-no-button.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
+    100% {
+      background: url('../images/logo/logo.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      width: 110px;
+      height: 27px;
+    }
   }
 }
 @-webkit-keyframes pulse-opened {
@@ -791,15 +1312,31 @@ th {
   margin: 0;
   padding: 0;
   height: 50%;
+  margin-top: 30%;
 }
 @media only screen and (min-width: 768px)and (max-width: 1024px) and (orientation: portrait) {
   .nav-box ul {
-    top: 20%;
+    margin-top: 30%;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
   .nav-box ul {
     top: 20%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+  .nav-box ul {
+    margin-top: 25%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  .nav-box ul {
+    margin-top: 35%;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  .nav-box ul {
+    margin-top: 40%;
   }
 }
 .nav-box li {
@@ -808,13 +1345,14 @@ th {
               -ms-grid-row-align: center;
           align-items: center;
   font-family: 'Brandon Black';
+  margin-bottom: 20px;
 }
 .nav-box li:first-child {
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px)and (max-width: 1024px) and (orientation: portrait) {
   .nav-box li:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 70px;
   }
 }
 @media only screen and (max-width: 768px)  and (orientation: landscape) {
@@ -839,18 +1377,12 @@ th {
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
   .nav-box li:first-child {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
-  .nav-box li:first-child {
-    margin-bottom: 120px;
-  }
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
-  .nav-box li:first-child {
-    margin-bottom: 120px;
-  }
 }
 .nav-box li h1 {
   color: #1c9cbc;
@@ -866,11 +1398,46 @@ th {
     font-size: 2em;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+  .nav-box li h1 {
+    font-size: 2.4em;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  .nav-box li h1 {
+    font-size: 2.4em;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  .nav-box li h1 {
+    font-size: 2.4em;
+  }
+}
 .nav-box li a {
   text-decoration: none;
-  font-size: 1.5em;
   text-transform: uppercase;
   color: #000;
+  font-size: 1.2em;
+}
+@media only screen and (min-width: 768px)and (max-width: 1024px) and (orientation: portrait) {
+  .nav-box li a {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .nav-box li a {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
+  .nav-box li a {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 480px)  and (orientation: portrait) {
+  .nav-box li a {
+    font-size: 1.2em;
+  }
 }
 .nav-box li a:hover,
 .nav-box li a.active {
@@ -884,15 +1451,31 @@ th {
   top: 5px;
   position: relative;
 }
+.close {
+  display: none;
+}
+.open {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/open_menu.png");
+}
 #toggle-nav {
   display: none;
 }
+#toggle-nav:checked ~ .open {
+  display: none;
+}
+#toggle-nav:checked ~ .close {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/close_menu.jpg");
+}
 #toggle-nav:checked ~ .nav-box {
   display: block;
-  z-index: 400;
 }
 #toggle-nav:checked ~ #toggle-nav-label {
-  background: #fff;
   color: rgba(0, 0, 0, 0.8);
 }
 ul.nav {
@@ -2276,6 +2859,22 @@ ul {
     background-repeat: no-repeat;
   }
 }
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  #index {
+    background: url(../images/backgrounds/index_640_1136.jpg);
+    background-position: -65px -12px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  #index {
+    background: url(../images/backgrounds/index_640_1136.jpg);
+    background-position: -77px -12px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+  }
+}
 #index .clearfix:after {
   content: "";
   clear: both;
@@ -2842,6 +3441,11 @@ ul {
     height: 12%;
   }
 }
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  #contact .content .divider {
+    height: 10%;
+  }
+}
 #contact .content .headline {
   color: #249fbe;
   text-transform: uppercase;
@@ -2922,21 +3526,21 @@ ul {
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
   #contact .content .headline {
-    font-size: 28px;
+    font-size: 40px;
     margin-left: 20px;
     height: 20%;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   #contact .content .headline {
-    font-size: 28px;
+    font-size: 40px;
     margin-left: 20px;
     height: 24%;
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #contact .content .headline {
-    font-size: 28px;
+    font-size: 45px;
     margin-left: 20px;
     height: 20%;
   }
@@ -3169,12 +3773,12 @@ ul {
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   #contact .content .main-content .selection_content .right-side {
-    padding-left: 36px;
+    padding-left: 84px;
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #contact .content .main-content .selection_content .right-side {
-    padding-left: 36px;
+    padding-left: 84px;
   }
 }
 #contact .content .main-content .selection_content .right-side .contact-list li {
@@ -3590,20 +4194,20 @@ ul {
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
   #about {
-    background-position: 64% -20%;
-    background-size: 170%;
+    background-position: 24% -16%;
+    background-size: 220%;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   #about {
-    background-position: 18% -20%;
-    background-size: 200%;
+    background-position: 27% -24%;
+    background-size: 224%;
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #about {
-    background-position: 18% -20%;
-    background-size: 200%;
+    background-position: 29% -20%;
+    background-size: 222%;
   }
 }
 #about .clearfix:after {
@@ -3955,7 +4559,7 @@ ul {
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #about .content .main-content .right-side {
     width: 100%;
-    padding: 20px 20px 0;
+    padding: 20px 45px  0;
   }
 }
 #about .content .main-content .right-side .spans {
@@ -4124,7 +4728,7 @@ ul {
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #about .content .main-content .right-side section.heading {
-    font-size: 1em;
+    font-size: 1.3em;
     height: 34px;
   }
 }
@@ -4177,6 +4781,24 @@ ul {
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
 }
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
+  #about .content .main-content .right-side section.heading div {
+    display: -webkit-inline-box;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+  #about .content .main-content .right-side section.heading div {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  #about .content .main-content .right-side section.heading div {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  #about .content .main-content .right-side section.heading div {
+    display: inline-block;
+  }
 }
 @media only screen and (max-width: 768px)  and (orientation: landscape) {
 }
@@ -4309,7 +4931,6 @@ ul {
   text-transform: uppercase;
   font-family: 'Brandon Black';
   display: block;
-  height: 13%;
 }
 @media only screen and (min-width: 1920px) {
   #blog .content .headline {
@@ -4380,7 +5001,27 @@ ul {
   #blog .content .headline {
     font-size: 28px;
     margin-left: 20px;
-    height: 6%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+  #blog .content .headline {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  #blog .content .headline {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  #blog .content .headline {
+    font-size: 45px;
+    margin-left: 20px;
+    margin-bottom: 5px;
   }
 }
 #blog .content .main-content {
@@ -4453,6 +5094,27 @@ ul {
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
   #blog .content .main-content {
     height: 73%;
+    padding: 0 20px 20px 20px;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+  #blog .content .main-content {
+    height: 65%;
+    padding: 0 20px 20px 20px;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  #blog .content .main-content {
+    height: 70%;
+    padding: 0 20px 20px 20px;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  #blog .content .main-content {
+    height: 70%;
     padding: 0 20px 20px 20px;
     overflow-y: scroll;
   }
@@ -5799,7 +6461,6 @@ ul {
   text-transform: uppercase;
   font-family: 'Brandon Black';
   display: block;
-  height: 13%;
 }
 @media only screen and (min-width: 1920px) {
   #portfolio .content .headline {
@@ -5871,7 +6532,27 @@ ul {
   #portfolio .content .headline {
     font-size: 28px;
     margin-left: 20px;
-    height: 6%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+  #portfolio .content .headline {
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  #portfolio .content .headline {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  #portfolio .content .headline {
+    font-size: 45px;
+    margin-left: 20px;
+    margin-bottom: 5px;
   }
 }
 #portfolio .content .main-content {
@@ -5954,12 +6635,34 @@ ul {
     overflow-y: scroll;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+  #portfolio .content .main-content {
+    height: 63%;
+    border-top: none;
+    padding: 0 20px 0 20px;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  #portfolio .content .main-content {
+    height: 70%;
+    border-top: none;
+    padding: 0 20px 20px 20px;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  #portfolio .content .main-content {
+    height: 70%;
+    border-top: none;
+    padding: 0 20px 20px 20px;
+    overflow-y: scroll;
+  }
+}
 #portfolio .content .main-content section.selection_content ul.portfolios {
   width: 20%;
   z-index: 1;
   position: relative;
-  -webkit-transition: top .1s linear;
-  transition: top .1s linear;
   height: 100%;
   float: left;
 }
@@ -6108,8 +6811,6 @@ ul {
   width: 100%;
   z-index: 1;
   display: none;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
 }
 #portfolio .content .main-content section.selection_content article.active {
   display: block;
@@ -6171,8 +6872,6 @@ ul {
 }
 #portfolio .content .main-content section.selection_content article .portfolio-transition {
   opacity: 1;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
 }
 #portfolio .content .main-content section.selection_content article .portfolio-transition.out {
   opacity: 0;
@@ -6343,45 +7042,36 @@ ul {
   #portfolio .content .main-content section.selection_content article .article_content div h4 {
     margin: 5px 0;
     font-size: 40px;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
   }
 }
 @media only screen and (max-width: 768px)  and (orientation: landscape) {
   #portfolio .content .main-content section.selection_content article .article_content div h4 {
     margin: 5px 0;
     font-size: 22px;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   #portfolio .content .main-content section.selection_content article .article_content div h4 {
     margin: 5px 0;
     font-size: 22px;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
   #portfolio .content .main-content section.selection_content article .article_content div h4 {
     margin: 5px 0;
     font-size: 22px;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
   }
 }
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
   #portfolio .content .main-content section.selection_content article .article_content div h4 {
     margin: 5px 0;
     font-size: 22px;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  #portfolio .content .main-content section.selection_content article .article_content div h4 {
+    margin: 8px 0;
+    font-size: 18px;
   }
 }
 #portfolio .content .main-content section.selection_content article .article_content p {
@@ -6650,7 +7340,6 @@ ul {
   text-transform: uppercase;
   font-family: 'Brandon Black';
   display: block;
-  height: 13%;
 }
 @media only screen and (min-width: 1920px) {
   #expertise .content .headline {
@@ -6721,7 +7410,27 @@ ul {
   #expertise .content .headline {
     font-size: 28px;
     margin-left: 20px;
-    height: 6%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+  #expertise .content .headline {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  #expertise .content .headline {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  #expertise .content .headline {
+    font-size: 45px;
+    margin-left: 20px;
+    margin-bottom: 5px;
   }
 }
 #expertise .content .main-content {
@@ -6804,6 +7513,27 @@ ul {
     overflow-y: scroll;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+  #expertise .content .main-content {
+    height: 65%;
+    border-top: none;
+    padding: 0 20px 0 20px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  #expertise .content .main-content {
+    height: 73%;
+    border-top: none;
+    padding: 0 20px 0 20px;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  #expertise .content .main-content {
+    height: 74%;
+    border-top: none;
+    padding: 0 20px 0 20px;
+  }
+}
 #expertise .content .main-content section.selection_content {
   width: 100%;
 }
@@ -6811,8 +7541,6 @@ ul {
   width: 20%;
   z-index: 1;
   position: relative;
-  -webkit-transition: top .1s linear;
-  transition: top .1s linear;
   height: 100%;
   float: left;
 }
@@ -6962,8 +7690,6 @@ ul {
   width: 100%;
   z-index: 1;
   display: none;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
 }
 #expertise .content .main-content section.selection_content article.active {
   display: block;
@@ -7026,8 +7752,6 @@ ul {
 }
 #expertise .content .main-content section.selection_content article .portfolio-transition {
   opacity: 1;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
 }
 #expertise .content .main-content section.selection_content article .portfolio-transition.out {
   opacity: 0;
@@ -7094,7 +7818,6 @@ ul {
   #expertise .content .main-content section.selection_content article .article_content div h4 {
     margin: 18px 0;
     font-size: 32px;
-    line-height: 1;
   }
 }
 @media only screen and (max-width: 768px)  and (orientation: landscape) {

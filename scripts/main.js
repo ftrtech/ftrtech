@@ -13183,6 +13183,9 @@ var mobileDetect = require('./features/mobile-detect')();
 $(function () {
         var nav = _menu;
 
+        var is_iPad = navigator.userAgent.match(/iPad/i) != null;
+        console.log(is_iPad);
+
         PopUpHide();
 
         if (mobileDetect) {
@@ -13205,17 +13208,32 @@ $(function () {
 
         }
 
-        $('#portfolio, #expertise').bind("mousewheel DOMMouseScroll", scrollHandler);
+        //$('#portfolio, #expertise').bind("mousewheel DOMMouseScroll", scrollHandler);
+
+
 
         if (mobileDetect) {
             $('#portfolio, #expertise').off("mousewheel DOMMouseScroll", scrollHandler);
+        }else if(is_iPad){
+
+            if (window.matchMedia("(orientation: landscape)").matches) {
+                // you're in LANDSCAPE mode
+                $('#portfolio, #expertise').bind("mousewheel DOMMouseScroll", scrollHandler);
+            }
+            if (window.matchMedia("(orientation: portrait)").matches) {
+                // you're in PORTRAIT mode
+                $('#portfolio, #expertise').off("mousewheel DOMMouseScroll", scrollHandler);
+            }
+
+            //$('#portfolio, #expertise').off("mousewheel DOMMouseScroll", scrollHandler);
+        }else{
+            $('#portfolio, #expertise').bind("mousewheel DOMMouseScroll", scrollHandler);
         }
 
 
         $(document).on("click", "ul.portfolios a", function (e) {
             e.preventDefault();
 
-            console.log("click");
             var $el = $(this);
             var $list = $("ul.portfolios");
             var marginStep = -40;
@@ -13431,7 +13449,28 @@ $(function () {
             e.preventDefault();
 
             // HERE I WANT TO REBIND THE EVENT:
-            scroll.bind("mousewheel DOMMouseScroll", scrollHandler);
+            //scroll.bind("mousewheel DOMMouseScroll", scrollHandler);
+
+            if (mobileDetect) {
+                scroll.unbind("mousewheel DOMMouseScroll", scrollHandler);
+            }else if(is_iPad){
+
+                if (window.matchMedia("(orientation: landscape)").matches) {
+                    // you're in LANDSCAPE mode
+                    scroll.bind("mousewheel DOMMouseScroll", scrollHandler);
+                }
+                if (window.matchMedia("(orientation: portrait)").matches) {
+                    // you're in PORTRAIT mode
+                    scroll.unbind("mousewheel DOMMouseScroll", scrollHandler);
+                }
+
+
+
+                //scroll.unbind("mousewheel DOMMouseScroll", scrollHandler);
+            }else{
+                scroll.bind("mousewheel DOMMouseScroll", scrollHandler);
+            }
+
         }
 
         var $body = $('body'),
@@ -13469,7 +13508,24 @@ $(function () {
                     recalculateLinks();
                     $("body").toggleClass('no-overflow');
 
-                    $('#portfolio, #expertise').bind("mousewheel DOMMouseScroll", scrollHandler);
+
+                    if (mobileDetect) {
+                        $('#portfolio, #expertise').unbind("mousewheel DOMMouseScroll", scrollHandler);
+                    }else if(is_iPad){
+
+                        if (window.matchMedia("(orientation: landscape)").matches) {
+                            // you're in LANDSCAPE mode
+                            $('#portfolio, #expertise').bind("mousewheel DOMMouseScroll", scrollHandler);
+                        }
+                        if (window.matchMedia("(orientation: portrait)").matches) {
+                            // you're in PORTRAIT mode
+                            $('#portfolio, #expertise').unbind("mousewheel DOMMouseScroll", scrollHandler);
+                        }
+
+                        //$('#portfolio, #expertise').unbind("mousewheel DOMMouseScroll", scrollHandler);
+                    }else{
+                        $('#portfolio, #expertise').bind("mousewheel DOMMouseScroll", scrollHandler);
+                    }
 
                     $('.popup').click(function (event) {
                         event.preventDefault();
