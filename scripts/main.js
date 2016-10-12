@@ -13184,7 +13184,7 @@ $(function () {
         var nav = _menu;
 
         var is_iPad = navigator.userAgent.match(/iPad/i) != null;
-        console.log(is_iPad);
+        //console.log(is_iPad);
 
         PopUpHide();
 
