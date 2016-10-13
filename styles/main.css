@@ -1552,13 +1552,13 @@ th {
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   .nav-box li:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (min-width: 736px) and (max-width: 767px) and (min-height: 414px) and (max-height: 736px) and (orientation: landscape) {
   .nav-box li:first-child {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
@@ -1598,6 +1598,7 @@ th {
   .nav-box li h1 {
     font-size: 2em;
     margin-top: 6px;
+    margin-bottom: 5px;
   }
 }
 @media only screen and (min-width: 736px) and (max-width: 767px) and (min-height: 414px) and (max-height: 736px) and (orientation: landscape) {
@@ -1610,6 +1611,7 @@ th {
   .nav-box li h1 {
     font-size: 1.8em;
     margin-top: 8px;
+    margin-bottom: 5px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
@@ -3987,19 +3989,19 @@ ul {
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (min-height: 481px) and (max-height: 568px) and (orientation: portrait) {
   #contact {
-    background-position: 40% 0;
+    background-position: 38% 0;
     background-size: 319%;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   #contact {
-    background-position: 43% 50px;
+    background-position: 40% 50px;
     background-size: 280%;
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #contact {
-    background-position: 43% 60px;
+    background-position: 38% 60px;
     background-size: 280%;
   }
 }
@@ -4223,21 +4225,21 @@ ul {
 @media only screen and (min-width: 320px) and (max-width: 374px) and (min-height: 481px) and (max-height: 568px) and (orientation: portrait) {
   #contact .content .headline {
     font-size: 20px;
-    height: 24%;
+    height: 40%;
     text-align: center;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   #contact .content .headline {
     font-size: 27px;
-    height: 31%;
+    height: 40%;
     text-align: center;
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #contact .content .headline {
     font-size: 30px;
-    height: 36%;
+    height: 40%;
     text-align: center;
   }
 }
@@ -4471,7 +4473,7 @@ ul {
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
   #contact .content .main-content .selection_content .right-side {
     width: 100%;
-    padding-left: 36px;
+    padding-left: 10px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
@@ -4926,6 +4928,7 @@ ul {
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
   #contact .content .main-content .selection_content .right-side .qr {
     margin-top: 15px;
+    display: none;
   }
 }
 #about {
@@ -4961,26 +4964,26 @@ ul {
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   #about {
-    background-position: 114% 74%;
-    background-size: 112%;
+    background-position: 0 -41px;
+    background-size: 100%;
   }
 }
 @media only screen and (min-width: 667px) and (max-width: 735px) and (min-height: 375px) and (max-height: 667px) and (orientation: landscape) {
   #about {
-    background-position: 114% 74%;
-    background-size: 122%;
+    background-position: 0 -41px;
+    background-size: 100%;
   }
 }
 @media only screen and (min-width: 736px) and (max-width: 767px) and (min-height: 414px) and (max-height: 736px) and (orientation: landscape) {
   #about {
-    background-position: 114% 74%;
-    background-size: 112%;
+    background-position: 0 -20px;
+    background-size: 100%;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
   #about {
-    background-position: 114% 74%;
-    background-size: 123%;
+    background-position: -66px 0;
+    background-size: 100%;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
@@ -5251,7 +5254,7 @@ ul {
   #about .content .headline {
     font-size: 23px;
     margin: 0;
-    height: 16%;
+    height: 12%;
     text-align: center;
   }
 }
@@ -5572,6 +5575,36 @@ ul {
 #about .content .main-content .right-side .spans {
   line-height: 1.2;
 }
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  #about .content .main-content .right-side .spans .second {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 736px) and (max-width: 767px) and (min-height: 414px) and (max-height: 736px) and (orientation: landscape) {
+  #about .content .main-content .right-side .spans .second {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
+  #about .content .main-content .right-side .spans .second {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  #about .content .main-content .right-side .spans .third {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 736px) and (max-width: 767px) and (min-height: 414px) and (max-height: 736px) and (orientation: landscape) {
+  #about .content .main-content .right-side .spans .third {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
+  #about .content .main-content .right-side .spans .third {
+    text-align: right;
+  }
+}
 #about .content .main-content .right-side .spans span {
   color: #525a5d;
   font-family: 'Proxima Nova';
@@ -5655,6 +5688,8 @@ ul {
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
   #about .content .main-content .right-side .spans span {
     margin-top: 1%;
+    font-size: 0.8em;
+    line-height: 1.4em;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
@@ -5720,22 +5755,28 @@ ul {
   #about .content .main-content .right-side section.heading {
     font-size: 1em;
     margin-top: 10px;
+    text-align: right;
+    margin-right: 30px;
   }
 }
 @media only screen and (min-width: 667px) and (max-width: 735px) and (min-height: 375px) and (max-height: 667px) and (orientation: landscape) {
   #about .content .main-content .right-side section.heading {
     font-size: 1em;
     margin-top: 10px;
+    text-align: right;
+    margin-right: 30px;
   }
 }
 @media only screen and (min-width: 736px) and (max-width: 767px) and (min-height: 414px) and (max-height: 736px) and (orientation: landscape) {
   #about .content .main-content .right-side section.heading {
     font-size: 1em;
+    text-align: right;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
   #about .content .main-content .right-side section.heading {
     font-size: 1em;
+    text-align: right;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
@@ -6803,6 +6844,7 @@ ul {
   font-family: 'Proxima Nova';
   color: #525a5d;
   line-height: 1.5;
+  text-align: justify;
 }
 #blog .content .main-content .selection_content article .article_content .footer {
   font-family: 'Proxima Nova';
@@ -8231,8 +8273,10 @@ ul {
     margin: 0 auto;
   }
   #portfolio .content .main-content section.selection_content article .article_content .image-mobile img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 42%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
@@ -8241,8 +8285,22 @@ ul {
     margin: 0 auto;
   }
   #portfolio .content .main-content section.selection_content article .article_content .image-mobile img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 42%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media only screen and (min-width: 736px) and (max-width: 767px) and (min-height: 414px) and (max-height: 736px) and (orientation: landscape) {
+  #portfolio .content .main-content section.selection_content article .article_content .image-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+  #portfolio .content .main-content section.selection_content article .article_content .image-mobile img {
+    width: 42%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
@@ -8418,22 +8476,29 @@ ul {
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   #portfolio .content .main-content section.selection_content article .article_content p {
     width: auto;
+    text-align: justify;
+    line-height: 1.4;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
   #portfolio .content .main-content section.selection_content article .article_content p {
     width: auto;
+    text-align: justify;
+    line-height: 1.4;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
   #portfolio .content .main-content section.selection_content article .article_content p {
     width: auto;
+    text-align: justify;
+    line-height: 1.4;
   }
 }
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
   #portfolio .content .main-content section.selection_content article .article_content p {
     width: auto;
     line-height: 1.4;
+    text-align: justify;
   }
 }
 #portfolio .content .main-content section.selection_content article .image {
@@ -8881,7 +8946,7 @@ ul {
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (min-height: 481px) and (max-height: 568px) and (orientation: portrait) {
   #expertise .content .main-content {
-    height: 78%;
+    height: 87%;
     border-top: none;
     padding: 0 15px 0 15px;
     overflow-y: scroll;
