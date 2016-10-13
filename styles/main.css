@@ -1768,7 +1768,7 @@ ul.nav li {
   float: left;
 }
 ul.nav li a {
-  padding: 0 26px;
+  padding: 0 23px;
   color: #131313;
   font-family: 'Brandon Black';
   text-transform: uppercase;
@@ -3980,25 +3980,26 @@ ul {
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: portrait) {
   #contact {
-    background-position: 39% 40px;
-    background-size: 280%;
+    background-position: 42% 39px;
+    background-size: 282%;
+    background: transparent;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (min-height: 481px) and (max-height: 568px) and (orientation: portrait) {
   #contact {
-    background-position: 39% 80px;
-    background-size: 282%;
+    background-position: 40% 0;
+    background-size: 319%;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   #contact {
-    background-position: 39% 105px;
+    background-position: 43% 50px;
     background-size: 280%;
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #contact {
-    background-position: 39% 105px;
+    background-position: 43% 60px;
     background-size: 280%;
   }
 }
@@ -4215,7 +4216,7 @@ ul {
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: portrait) {
   #contact .content .headline {
     font-size: 20px;
-    height: 24%;
+    height: 8%;
     text-align: center;
   }
 }
@@ -4229,7 +4230,7 @@ ul {
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   #contact .content .headline {
     font-size: 27px;
-    height: 36%;
+    height: 31%;
     text-align: center;
   }
 }
@@ -4475,17 +4476,17 @@ ul {
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
   #contact .content .main-content .selection_content .right-side {
-    padding-left: 90px;
+    padding-left: 10px;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   #contact .content .main-content .selection_content .right-side {
-    padding-left: 84px;
+    padding-left: 20px;
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #contact .content .main-content .selection_content .right-side {
-    padding-left: 84px;
+    padding-left: 30px;
   }
 }
 #contact .content .main-content .selection_content .right-side .contact-list li {
@@ -4845,21 +4846,27 @@ ul {
     margin-left: 8px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: portrait) {
   #contact .content .main-content .selection_content .right-side .contact-list li a {
-    font-size: 8px;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) and (min-height: 481px) and (max-height: 568px) and (orientation: portrait) {
+  #contact .content .main-content .selection_content .right-side .contact-list li a {
+    font-size: 12px;
     margin-left: 8px;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   #contact .content .main-content .selection_content .right-side .contact-list li a {
-    font-size: 10px;
+    font-size: 14px;
     margin-left: 8px;
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #contact .content .main-content .selection_content .right-side .contact-list li a {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 8px;
   }
 }
@@ -4915,16 +4922,10 @@ ul {
   #contact .content .main-content .selection_content .right-side .qr {
     display: none;
   }
-  #contact .content .main-content .selection_content .right-side .qr img {
-    width: 30%;
-  }
 }
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
   #contact .content .main-content .selection_content .right-side .qr {
     margin-top: 15px;
-  }
-  #contact .content .main-content .selection_content .right-side .qr img {
-    width: 30%;
   }
 }
 #about {
@@ -4998,12 +4999,13 @@ ul {
   #about {
     background-position: 16% -16%;
     background-size: 170%;
+    background: transparent;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (min-height: 481px) and (max-height: 568px) and (orientation: portrait) {
   #about {
     background-position: 24% -16%;
-    background-size: 196%;
+    background-size: 175%;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
@@ -5078,110 +5080,224 @@ ul {
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
   #about .content {
-    padding-bottom: 70px;
+    padding-bottom: 10px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
   #about .content {
-    padding-bottom: 70px;
+    padding-bottom: 10px;
   }
 }
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
   #about .content {
-    padding-bottom: 70px;
+    padding-bottom: 10px;
   }
 }
 #about .content .divider {
-  height: 35%;
+  height: 14%;
 }
 @media only screen and (min-width: 1920px) {
   #about .content .divider {
-    height: 35%;
+    height: 14%;
   }
 }
 @media only screen and (min-width: 1440px) and (max-width: 1919px) {
   #about .content .divider {
-    height: 35%;
+    height: 11%;
   }
 }
 @media only screen and (min-width: 1366px) and (max-width: 1439px) {
   #about .content .divider {
-    height: 30%;
+    height: 11%;
   }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
   #about .content .divider {
-    height: 30%;
+    height: 12%;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1279px) {
   #about .content .divider {
-    height: 30%;
+    height: 12%;
   }
 }
 @media only screen and (min-width: 768px)and (max-width: 1024px) and (orientation: landscape) {
   #about .content .divider {
-    height: 30%;
+    height: 12%;
   }
 }
 @media only screen and (min-width: 768px)and (max-width: 1024px) and (orientation: portrait) {
   #about .content .divider {
-    height: 25%;
-  }
-}
-@media only screen and (max-width: 768px)  and (orientation: landscape) {
-  #about .content .divider {
-    height: 30%;
+    height: 8%;
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   #about .content .divider {
-    height: 20%;
-  }
-}
-@media only screen and (min-width: 667px) and (max-width: 735px) and (min-height: 375px) and (max-height: 667px) and (orientation: landscape) {
-  #about .content .divider {
-    height: 20%;
+    height: 3%;
   }
 }
 @media only screen and (min-width: 736px) and (max-width: 767px) and (min-height: 414px) and (max-height: 736px) and (orientation: landscape) {
   #about .content .divider {
-    height: 20%;
+    height: 3%;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
   #about .content .divider {
-    height: 20%;
+    height: 4%;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
   #about .content .divider {
-    height: 45%;
+    height: 10%;
   }
 }
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
   #about .content .divider {
-    height: 50%;
+    height: 1%;
   }
 }
-@media only screen and (min-width: 320px) and (max-height: 480px) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: portrait) {
   #about .content .divider {
-    height: 55%;
+    height: 2.6%;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 374px) and (min-height: 481px) and (max-height: 568px) and (orientation: portrait) {
   #about .content .divider {
-    height: 55%;
+    height: 2.4%;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   #about .content .divider {
-    height: 55%;
+    height: 2.4%;
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #about .content .divider {
-    height: 50%;
+    height: 2.4%;
+  }
+}
+#about .content .headline {
+  color: #249fbe;
+  text-transform: uppercase;
+  font-family: 'Brandon Black';
+  display: block;
+}
+@media only screen and (min-width: 1920px) {
+  #about .content .headline {
+    font-size: 80.5px;
+    margin-left: 290px;
+    height: 12%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  #about .content .headline {
+    font-size: 80.5px;
+    margin-left: 100px;
+    height: 12%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+  #about .content .headline {
+    font-size: 64px;
+    margin-left: 100px;
+    height: 12%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+  #about .content .headline {
+    font-size: 64px;
+    margin-left: 30px;
+    height: 12%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+  #about .content .headline {
+    font-size: 58px;
+    margin-left: 46px;
+    height: 12%;
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 768px)and (max-width: 1024px) and (orientation: landscape) {
+  #about .content .headline {
+    font-size: 58px;
+    margin-left: 250px;
+    height: 12%;
+    margin-top: 42px;
+  }
+}
+@media only screen and (min-width: 768px)and (max-width: 1024px) and (orientation: portrait) {
+  #about .content .headline {
+    font-size: 58px;
+    margin-left: 30px;
+    height: 8%;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  #about .content .headline {
+    font-size: 26px;
+    margin: 0;
+    height: 18%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
+  #about .content .headline {
+    font-size: 23px;
+    margin: 0;
+    height: 16%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
+  #about .content .headline {
+    font-size: 28px;
+    margin-left: 30px;
+    height: 6%;
+  }
+}
+@media only screen and (max-width: 480px)  and (orientation: portrait) {
+  #about .content .headline {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: portrait) {
+  #about .content .headline {
+    font-size: 20px;
+    margin: 0;
+    height: 10%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) and (min-height: 481px) and (max-height: 568px) and (orientation: portrait) {
+  #about .content .headline {
+    font-size: 20px;
+    margin: 0;
+    height: 41%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
+  #about .content .headline {
+    font-size: 20px;
+    margin: 0;
+    height: 46%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+  #about .content .headline {
+    font-size: 20px;
+    margin: 0;
+    height: 46%;
+    text-align: center;
   }
 }
 #about .content .main-content {
@@ -5426,31 +5542,31 @@ ul {
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
   #about .content .main-content .right-side {
     width: 100%;
-    padding: 0 30px;
+    padding: 0 15px;
   }
 }
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
   #about .content .main-content .right-side {
     width: 100%;
-    padding: 20px 20px 0;
+    padding: 0 15px 0;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
   #about .content .main-content .right-side {
     width: 100%;
-    padding: 20px 20px 0;
+    padding: 0 15px 0;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   #about .content .main-content .right-side {
     width: 100%;
-    padding: 20px 20px 0;
+    padding: 0 15px 0;
   }
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
   #about .content .main-content .right-side {
     width: 100%;
-    padding: 20px 45px 0;
+    padding: 0 15px 0;
   }
 }
 #about .content .main-content .right-side .spans {
@@ -5460,6 +5576,7 @@ ul {
   color: #525a5d;
   font-family: 'Proxima Nova';
   display: block;
+  text-align: justify;
 }
 @media only screen and (min-width: 1920px) {
   #about .content .main-content .right-side .spans span {
@@ -5514,9 +5631,7 @@ ul {
 @media only screen and (max-width: 768px)  and (orientation: landscape) {
   #about .content .main-content .right-side .spans span {
     margin-top: 2%;
-    font-size: 0.8em;
     width: 306px;
-    line-height: 18px;
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
@@ -5530,36 +5645,26 @@ ul {
 @media only screen and (min-width: 667px) and (max-width: 735px) and (min-height: 375px) and (max-height: 667px) and (orientation: landscape) {
   #about .content .main-content .right-side .spans span {
     margin-top: 1%;
-    font-size: 0.9em;
-    line-height: 1.1em;
   }
 }
 @media only screen and (min-width: 736px) and (max-width: 767px) and (min-height: 414px) and (max-height: 736px) and (orientation: landscape) {
   #about .content .main-content .right-side .spans span {
     margin-top: 1.2%;
-    font-size: 0.8em;
-    line-height: 18px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
   #about .content .main-content .right-side .spans span {
     margin-top: 1%;
-    font-size: 0.8em;
-    line-height: 1.4em;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
   #about .content .main-content .right-side .spans span {
     margin-top: 2%;
-    font-size: 0.8em;
-    line-height: 18px;
   }
 }
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
   #about .content .main-content .right-side .spans span {
     margin-top: 2%;
-    font-size: 0.8em;
-    line-height: 1.4em;
   }
 }
 #about .content .main-content .right-side .spans span:first-letter {
@@ -7310,6 +7415,7 @@ ul {
   }
 }
 #article .content .main-content .section_content article .article_content p {
+  text-align: justify;
   padding-bottom: 10px;
 }
 #article .content .main-content .section_content article .article_content p:first-child {
@@ -8302,37 +8408,31 @@ ul {
 @media only screen and (min-width: 768px)and (max-width: 1024px) and (orientation: portrait) {
   #portfolio .content .main-content section.selection_content article .article_content p {
     width: auto;
-    font-size: 16px;
   }
 }
 @media only screen and (max-width: 768px)  and (orientation: landscape) {
   #portfolio .content .main-content section.selection_content article .article_content p {
     width: auto;
-    font-size: 12px;
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   #portfolio .content .main-content section.selection_content article .article_content p {
     width: auto;
-    font-size: 14px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) and (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
   #portfolio .content .main-content section.selection_content article .article_content p {
     width: auto;
-    font-size: 14px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 567px)  and (orientation: portrait) {
   #portfolio .content .main-content section.selection_content article .article_content p {
     width: auto;
-    font-size: 12px;
   }
 }
 @media only screen and (max-width: 480px)  and (orientation: portrait) {
   #portfolio .content .main-content section.selection_content article .article_content p {
     width: auto;
-    font-size: 12px;
     line-height: 1.4;
   }
 }

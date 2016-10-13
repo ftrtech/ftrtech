@@ -13151,7 +13151,7 @@ module.exports=[
   {"url":"expertise","index":"3","title":"expertise","visible":true},
   {"url":"blog","index":"4","title":"blog","visible":true},
   {"url":"article","index":"4","title":"article","visible":false},
-  {"url":"contact","index":"5","title":"contact","visible":true}
+  {"url":"contact","index":"5","title":"contacts","visible":true}
 ]
 
 },{}],5:[function(require,module,exports){
