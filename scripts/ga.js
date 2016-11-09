@@ -1,12 +1,2 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-79669736-1', 'auto');
-  ga('send', 'pageview');
-},{}]},{},[1])
-
-
+!function e(r,t,n){function o(i,c){if(!t[i]){if(!r[i]){var u="function"==typeof require&&require;if(!c&&u)return u(i,!0);if(a)return a(i,!0);var f=new Error("Cannot find module '"+i+"'");throw f.code="MODULE_NOT_FOUND",f}var s=t[i]={exports:{}};r[i][0].call(s.exports,function(e){var t=r[i][1][e];return o(t?t:e)},s,s.exports,e,r,t,n)}return t[i].exports}for(var a="function"==typeof require&&require,i=0;i<n.length;i++)o(n[i]);return o}({1:[function(e,r,t){!function(e,r,t,n,o,a,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,a=r.createElement(t),i=r.getElementsByTagName(t)[0],a.async=1,a.src=n,i.parentNode.insertBefore(a,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-79669736-1","auto"),ga("send","pageview")},{}]},{},[1]);
 //# sourceMappingURL=ga.js.map
